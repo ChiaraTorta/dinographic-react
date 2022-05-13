@@ -5,9 +5,25 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),url(https://images.unsplash.com/photo-1594745087095-65dc6316dab6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80) no-repeat;
+  background-attachment: fixed;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.grid {
+  display: flex;
+  margin: 2em;
+  flex-wrap: wrap;
+}
+
+.grid-item {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  box-sizing: border-box;
+  padding: 0.5em 2em 0.5em 2em;
+  position: relative;
+  width: calc(100% / 3);
 }
